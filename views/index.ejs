@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Twitter Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="javascripts/es.js"></script>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    
+    <div class="col-md-3" id="alalyzer_list">
+      <h3>Select Analyzers</h3>
+<br/>
+      <h4>Korean Analyzers</h4>
+      <div class="checkbox"><label><input type="checkbox" value="arirang_analyzer"> arirang_analyzer</label> <a type="button" class="btn btn-info btn-xs" href="http://cafe.naver.com/korlucene" target="_new">Info</a></div>
+      <div class="checkbox"><label><input type="checkbox" value="seunjeon"> seunjeon</label> <a type="button" class="btn btn-info btn-xs" href="http://eunjeon.blogspot.kr/" target="_new">Info</a></div>
+      <div class="checkbox"><label><input type="checkbox" value="openkoreantext-analyzer"> openkoreantext-analyzer</label> <a type="button" class="btn btn-info btn-xs" href="https://github.com/open-korean-text/elasticsearch-analysis-openkoreantext" target="_new">Info</a></div>
+<br/>
+      <h4>ES Supported Analyzers</h4>
+      <div class="checkbox"><label><input type="checkbox" value="standard"> standard</label></div>
+      <div class="checkbox"><label><input type="checkbox" value="simple"> simple</label></div>
+      <div class="checkbox"><label><input type="checkbox" value="whitespace"> whitespace</label></div>
+      <div class="checkbox"><label><input type="checkbox" value="stop"> stop</label></div>
+      <div class="checkbox"><label><input type="checkbox" value="keyword"> keyword</label></div>
+      <div class="checkbox"><label><input type="checkbox" value="pattern"> pattern</label></div>
+      <div class="checkbox"><label><input type="checkbox" value="fingerprint"> fingerprint</label></div>
+
+    </div>
+
+    <div class="col-md-3">
+      <h3>Text to Analyze</h3>
+      <textarea class="form-control" rows="10" id="a_text"></textarea>
+    </div>
+
+    <div class="col-md-6">
+      <h3><button id="analyzeBtn" type="button" class="btn btn-primary">Analyze</button></h3>
+      <div id="analyzer_results">
+        
+      </div>
+    </div>
+    
+  </body>
+</html>
