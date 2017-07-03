@@ -27,9 +27,9 @@
       <h3>Select Analyzers</h3>
 <br/>
       <h4>Korean Analyzers</h4>
-      <div class="checkbox"><label><input type="checkbox" value="arirang_analyzer"> arirang_analyzer</label> <a type="button" class="btn btn-info btn-xs" href="http://cafe.naver.com/korlucene" target="_new">Info</a></div>
-      <div class="checkbox"><label><input type="checkbox" value="seunjeon"> seunjeon</label> <a type="button" class="btn btn-info btn-xs" href="http://eunjeon.blogspot.kr/" target="_new">Info</a></div>
-      <div class="checkbox"><label><input type="checkbox" value="openkoreantext-analyzer"> openkoreantext-analyzer</label> <a type="button" class="btn btn-info btn-xs" href="https://github.com/open-korean-text/elasticsearch-analysis-openkoreantext" target="_new">Info</a></div>
+      <div class="checkbox"><label><input type="checkbox" value="arirang_analyzer"> arirang_analyzer (아리랑)</label> <a type="button" class="btn btn-info btn-xs" href="http://cafe.naver.com/korlucene" target="_new">Info</a></div>
+      <div class="checkbox disabled"><label><input type="checkbox" value="seunjeon" disabled> seunjeon (은전한닢)</label> <a type="button" class="btn btn-info btn-xs" href="http://eunjeon.blogspot.kr/" target="_new">Info</a><br/><small>메모리 문제로 막아둡니다. 은전한닢 선택하면 자꾸 죽네요.</small></div>
+      <div class="checkbox"><label><input type="checkbox" value="openkoreantext-analyzer"> openkoreantext-analyzer (Twitter-Korean)</label> <a type="button" class="btn btn-info btn-xs" href="https://github.com/open-korean-text/elasticsearch-analysis-openkoreantext" target="_new">Info</a></div>
 <br/>
       <h4>ES Supported Analyzers</h4>
       <div class="checkbox"><label><input type="checkbox" value="standard"> standard</label></div>
@@ -44,7 +44,7 @@
 
     <div class="col-md-3">
       <h3>Text to Analyze</h3>
-      <textarea class="form-control" rows="10" id="a_text"></textarea>
+      <textarea class="form-control" rows="10" id="a_text" placeholder="Max 2000 chars" maxlength="2000"></textarea>
     </div>
 
     <div class="col-md-6">
